@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">   
+       <div *ngIf="isLoading" class="d-flex justify-content-center align-items-center vh-100">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only"></span>
+        </div>  
+       </div>
+
+
+       <div class="card col-3 m-4" style="height: 400px;"  *ngFor="let shibe of shibes">
+        <img class="img-fluid rounded mt-2" style="max-height: 250px;" alt="shibe" src="{{shibe}}"> 
+      </div> 
+      
+      
+        
+    </div>
+</div>
